@@ -1,6 +1,6 @@
 # Episteme Paywall & Free Course Verifier (GitHub Action)
 
-[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Episteme%20Verifier-blue?style=flat&logo=github)](https://github.com/marketplace)
+[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Episteme%20Verifier-blue?style=flat&logo=github)](https://github.com/marketplace/actions/episteme-paywall-free-course-verifier)
 [![npm version](https://img.shields.io/npm/v/episteme-check.svg?style=flat)](https://www.npmjs.com/package/episteme-check)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Verify Courseware
-        uses: SreeNaresh1/episteme-ai/packages/action@main
+        uses: SreeNaresh1/episteme-action@v1.0.0
         with:
           url: 'https://docs.python.org/3/tutorial/'
 ```
@@ -33,7 +33,7 @@ jobs:
 ### 2. Check Multiple URLs in Batch
 ```yaml
       - name: Audit Free Curriculum
-        uses: SreeNaresh1/episteme-ai/packages/action@main
+        uses: SreeNaresh1/episteme-action@v1.0.0
         with:
           urls: |
             https://developer.mozilla.org/en-US/
